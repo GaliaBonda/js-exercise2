@@ -6,13 +6,86 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JS-exercise2</title>
+    <link rel="stylesheet" href="mycss.css">
 </head>
 
 <body>
-    <p>Open console to check out function </p>
-    <script src="myjs.js">
-
-    </script>
+    <div class="container">
+        <h1 class="title">JavaScript Exercise 2</h1>
+        <h2 class="subtitle">Task</h2>
+        <p class="task-text">
+            Make a function that accepts text in CSV format and returns function that will accept any text as
+            input and replace the city names in it with a string like "city name (X place in the TOP-10 largest cities
+            of
+            Ukraine, population UUUUUU human)".
+        </p>
+        <p class="block-descr">
+            Here you can input population statistics in
+            CSV format as follows: "10,20,Kropyvnytskyi,200000".
+        </p>
+        <div class="csv-user-input" id="user-csv" contenteditable="true">
+            44.38,34.33,Alushta,31440,<br>
+            49.46,30.17,Bila Tserkva,200131,<br>
+            49.54,28.49,Berdychiv,87575,<br>
+            46.49,36.58,Berdyansk,121692,<br>
+            49.15,28.41,Vinnytsia,356665,<br>
+            # 45.40,34.29,Джанкой,43343,<br>
+            48.28,34.47,Kamyanske,255841,<br>
+            48.31,35.08,Dnipro,1065008,<br>
+            48.03,37.47,Donetsk,1016194,<br>
+            50.18,28.49,Zhytomyr,284236 ,,,,,<br>
+            49.04,28.12,Zhmerynka,37349,<br>
+            47.53,35.23,Zaporozhye,815256,<br>
+            45.11,33.28,Evpatoria,105915,<br>
+            48.56,24.53,Ivano-Frankivsk,218359,<br>
+            48.43,26.45,Kamyanets-Podilsky,99610,<br>
+            # 45.20,36.38,Kerch,157007,,,,,<br>
+            50.27,30.30,Kyiv,2611327,<br>
+            48.31,32.21,Kropyvnytskyi,254103,<br>
+            49.07,33.35,Kremenchuk,234073,<br>
+            47.54,33.33,Kryvyi Rih,668980,<br>
+            48.36,39.22,Lugansk,463097,<br>
+            50.49,25.26,Lutsk,208816,<br>
+            49.53,24.16,Lviv,732818,<br>
+            47.07,37.40,Mariupol,492176,<br>
+            46.53,35.25,Melitopol,160657,,,,,<br>
+            46.58,32.12,Mykolaiv,514136,<br>
+            48.26,22.45,Mukacheve,82346,<br>
+            47.37,34.30,Nikopol,136280,<br>
+            46.29,30.44,Odessa,1029049,<br>
+            48.33,35.57,Pavlograd,118816,<br>
+            49.37,34.37,Poltava,317998,<br>
+            50.39,26.26,Rivne,248813,<br>
+            49.33,23.23,Sambir,36556,<br>
+            44.29,33.43,Sevastopol,342451,<br>
+            44.55,34.13,Simferopol,343644,<br>
+            50.58,34.52,Sumy,293141,<br>
+            49.37,25.47,Ternopil,227755,,,,,<br>
+            48.40,22.30,Uzhhorod,117317,<br>
+            50.05,30.03,Fastiv,51976,<br>
+            45.02,35.31,Feodosiya,74669,<br>
+            50.02,36.14,Kharkiv,1470902,<br>
+            46.40,32.42,Kherson,328360,<br>
+            49.26,27.06,Khmelnytsky,253994,<br>
+            48.11,23.40,Khust,29080,<br>
+            49.27,32.03,Cherkasy,295414,<br>
+            51.29,31.22,Chernihiv,304994,<br>
+            48.16,26.07,Chernivtsi,240621,<br>
+            # 44.26,34.19,Yalta 81654,<br>
+        </div>
+        <p class="block-descr">
+            Here you can input string with cities to replace.
+        </p>
+        <div class="string-user-input" id="user-string" contenteditable="true">
+            Bla bla bla Kyiv bla bla Odessa bla bla bla bla Lviv bla bla Kyiv
+        </div>
+        <button class="try-fnc-btn" id="try-func">Rewrite string</button>
+        <p class="block-descr">
+            Here will appear the result
+        </p>
+        <div class="result" id="result">?</div>
+    </div>
+    <script src="myjs.js"></script>
 
 </body>
 

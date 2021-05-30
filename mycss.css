@@ -1,0 +1,51 @@
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.title {
+  text-align: center;
+}
+
+.subtitle {
+  text-transform: uppercase;
+}
+
+.task-text {
+  font-style: italic;
+  margin-bottom: 30px;
+}
+
+.csv-user-input {
+  border: 2px solid black;
+  width: 500px;
+  padding: 10px;
+  margin-bottom: 30px;
+}
+
+.string-user-input {
+  border: 2px solid black;
+  width: 500px;
+  padding: 10px;
+  margin-bottom: 30px;
+}
+
+.try-fnc-btn {
+  padding: 5px;
+  text-transform: uppercase;
+}
+
+.result {
+  border: 2px solid black;
+  width: 500px;
+  padding: 10px;
+}
+
+.block-descr {
+  margin: 30px 0;
+}
